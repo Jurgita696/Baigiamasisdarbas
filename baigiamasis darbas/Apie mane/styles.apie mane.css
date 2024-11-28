@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1e1e1;
+}
+
+/* Apie mane sekcija */
+.about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(236, 223, 223);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(230, 209, 209, 0.1);
+    gap: 20px;
+}
+
+.about-img {
+    width: 25%; /* Pakeiskite dydį pagal poreikį */
+    height: auto;
+    margin-right: 20px; 
+    border-radius: 8px;
+}
+
+.about-text {
+    max-width: 600px; /* Apriboti teksto plotį */
+}
+
+header, footer {
+    background-color: #ecdbdb;
+    color: rgb(34, 32, 32);
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Horizontaliai išcentrinta */
+    align-items: center;     /* Vertikaliai išcentrinta */
+    height: 20px;           /* Galite pasirinkti norimą aukštį */
+    text-align: center;      /* Tekstas bus centruotas */
+}
+
+nav p {
+    margin: 0;               /* Pašaliname numatytą tarpus */
+}
+
+nav, h2 {
+    margin-bottom:  250px;
+}
+
+h2, p {
+    margin-bottom: 0px;
+}

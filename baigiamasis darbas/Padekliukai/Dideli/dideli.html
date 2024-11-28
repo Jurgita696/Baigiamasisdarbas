@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dideli padėkliukai</title>
+    <link rel="stylesheet" href="dideli.css">
+    <script src="dideli.js"></script>
+</head>
+<body>
+    <header>
+        <p>Susisiekime: +370 699 38358 arba <br> <a href="mailto:info@interjeras.lt">info@interjeras.lt</a></p>
+    </header>
+    
+    <header>
+        <h1>Dideli padėkliukai</h1>
+        <div class="filters">
+            <div>Filtruoti: <button>Kaina</button></div>
+            <div>Rūšiuoti pagal: <button class="active">Spalva</button></div>
+            <div>7 gaminiai (-ių)</div>
+        </div>
+
+        <div id="filters">
+            <ul>
+                <li><button data-color="rožinis">rožinis</button></li>
+                <li><button data-color="šv. pilkas">Šv. pilkas</button></li>
+                <li><button data-color="t. mėlynas">T. mėlynas</button></li>
+                <li><button data-color="pelenu spalvos">Pelenų spalvos</button></li>
+                <li><button data-color="valentinas">Valentinas</button></li>
+                <li><button data-color="all">Visos spalvos</button></li>
+            </ul>
+            </div>
+    </header>
+
+    <main>
+        <div class="product-gallery">
+            <!-- Kiekvienas produktas -->
+            <div class="product" data-color="rožinis">
+                    <div class="product-image">
+                    <img src="dideli pad1.jpg" alt="Rožinis padėkliukas">
+                    <div class="label">Išparduota</div>
+                </div>
+                <h3>Rožinis padėkliukas</h3>
+                <div class="price">
+                    <span class="old-price">35,84 €</span>
+                    <span class="new-price">25,88 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="šv. pilkas">
+                <div class="product-image">
+                    <img src="dideli pad2.jpg" alt="Šv. pilkas padėkliukas">
+                </div>
+                <h3>Šv. pilkas padėkliukas</h3>
+                <div class="price">
+                    <span class="new-price">12,44 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="t. mėlynas">
+                <div class="product-image">
+                    <img src="dideli pad3.jpg" alt="T. mėlynas padėkliukas">
+                </div>
+                <h3>T. mėlynas padėkliukas</h3>
+                <div class="price">
+                    <span class="new-price">22,44 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="pelenu spalvos">
+                <div class="product-image">
+                    <img src="dideli pad4.jpg" alt="Apvalus didelis pelenų rožinės spalvos">
+                </div>
+                <h3>Apvalus didelis pelenų rožinės spalvos</h3>
+                <div class="price">
+                    <span class="new-price">45 €</span>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="dideli pad5.jpg" alt="Bordo spalvos padėkliukas Valentinas">
+                    <div class="label">Išparduota</div>
+                </div>
+                <h3>Bordo spalvos padėkliukas Valentinas</h3>
+                <div class="price">
+                    <span class="new-price">55,50 €</span>
+                </div>
+            </div>
+
+            <!-- puslapiu navigacija-->
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>    
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">6</a>
+                <a href="#">&gt;</a> <!-- Kitas puslapis -->
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <a href="Pagrindinis/index.html">Grįžti į pagrindinį puslapį</a>
+    </nav>
+
+       <footer>
+        <p>&copy; 2024. Visos teisės saugomos.</p>
+    </footer>
+
+</body>
+</html>

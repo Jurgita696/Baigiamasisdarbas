@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dideli padėkliukai</title>
+    <link rel="stylesheet" href="mazi.css">
+    <script src="mazi.js"></script>
+</head>
+<body>
+    <header>
+        <p>Susisiekime: +370 699 38358 arba <br> <a href="mailto:info@interjeras.lt">info@interjeras.lt</a></p>
+    </header>
+    
+    <header>
+        <h1>Maži padėkliukai</h1>
+        <div class="filters">
+            <div>Filtruoti: <button>Kaina</button></div>
+            <div>Rūšiuoti pagal: <button class="active">Spalva</button></div>
+            <div>7 gaminiai (-ių)</div>
+        </div>
+
+        <div id="filters">
+            <ul>
+                <li><button data-color="rožinis">rožinis</button></li>
+                <li><button data-color="šv. pilkas">Šv. pilkas</button></li>
+                <li><button data-color="dangus">dangus</button></li>
+                <li><button data-color="žydra">Žydra</button></li>
+                <li><button data-color="valentinas">Valentinas</button></li>
+                <li><button data-color="all">Visos spalvos</button></li>
+            </ul>
+            </div>
+    </header>
+
+    <main>
+        <div class="product-gallery">
+            <!-- Kiekvienas produktas -->
+            <div class="product" data-color="įv. spalvu">
+                    <div class="product-image">
+                    <img src="mazi pad1.jpg" alt="Įvairių spalvų">
+                    <div class="label">Išparduota</div>
+                </div>
+                <h3>Įvairių spalvų maži padėkliukai</h3>
+                <div class="price">
+                    <span class="old-price">35,84 €</span>
+                    <span class="new-price">25,88 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="šv. pilkas">
+                <div class="product-image">
+                    <img src="mazi pad2.jpg" alt="Šv. pilkas padėkliukas">
+                </div>
+                <h3>Šv. pilkas padėkliukas</h3>
+                <div class="price">
+                    <span class="new-price">5,44 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="dangus">
+                <div class="product-image">
+                    <img src="mazi pad3.jpg" alt="Padėkliukai Dangus">
+                </div>
+                <h3>Padėkliukai Dangus</h3>
+                <div class="price">
+                    <span class="new-price">22,44 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="žydra">
+                <div class="product-image">
+                    <img src="mazi pad4.jpg" alt="Žydri padėkliukai">
+                </div>
+                <h3>Žydri padėkliukai</h3>
+                <div class="price">
+                    <span class="new-price">45 €</span>
+                </div>
+            </div>
+
+            <!-- puslapiu navigacija-->
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>    
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">6</a>
+                <a href="#">&gt;</a> <!-- Kitas puslapis -->
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <a href="Pagrindinis/index.html">Grįžti į pagrindinį puslapį</a>
+    </nav>
+
+       <footer>
+        <p>&copy; 2024. Visos teisės saugomos.</p>
+    </footer>
+
+</body>
+</html>

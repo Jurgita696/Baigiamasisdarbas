@@ -1,0 +1,269 @@
+/* Bendras stilius */
+body {
+    font-family: Arial, sans-serif; /* Srifto nustatymas */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header stiliai */
+header {
+    display: flex;
+    justify-content: flex-start; /* Tekstas išlygiuotas į kairę */
+    align-items: center;         /* Vertikalus išlygiavimas */
+    padding: 10px;
+    background-color: #f9f9f9;   /* Šviesus fonas (pasirinktinai) */
+}
+
+header p {
+    margin: 0; /* Pašaliname nereikalingą tarpą */
+}
+
+/* Navigacija */
+nav a {
+    margin-right: 20px;
+    text-decoration: underline; /* pabraukimą */
+    color: #484bf8;           /* Teksto spalva */
+}
+
+header, nav, footer {
+    margin-bottom: 20px;
+}
+
+/* Main stiliai */
+main {
+    display: flex;
+    flex-direction: column; /* Elementai rikiuojami vertikaliai */
+    justify-content: flex-start; /* Horizontaliai išlygiuota į kairę */
+    align-items: flex-start;     /* Vertikaliai išlygiuota į kairę */
+    padding: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+main p {
+    margin: 0 0 10px 0; /* Pridedame tarpą tarp paragrafų */
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #b9c6f0;
+    outline: none;
+}
+
+/* Sekcijos stiliai */
+section {
+    margin-bottom: 0px;
+}
+
+/* Footer stiliai */
+footer, nav, header p {
+    display: flex;
+    justify-content: center; /* Centruojame tekstą horizontaliai */
+    align-items: center;     /* Centruojame tekstą vertikaliai */
+    height: auto;            /* Footer aukštis */
+    padding: 10px;
+    background-color: #f2f4fc; /* Fono spalva */
+    width: 100%; /* Užtikrina, kad spalva užims visą matomą langą */
+    text-align: center;
+}
+
+footer p {
+    margin: 0; /* Pašaliname numatytus tarpus */
+}
+
+main, h2 {
+    margin-bottom:  150px;
+}
+
+h2, p {
+    margin-bottom: 0px;
+}
+
+/* Mažiname tarpą tarp Kontaktai ir Užsakymai */
+section#uzsakymai h2 {
+    margin-top: 0px; /* Sumažintas viršutinis tarpas */
+    margin-bottom: 20px; /* Sumažintas apatinis tarpas */
+}
+
+/* Mažiname tarpą tarp Kontaktai ir Užsakymai */
+section#pristatymas h2 {
+    margin-top: 10px; /* Sumažintas viršutinis tarpas */
+    margin-bottom: 20px; /* Sumažintas apatinis tarpas */
+}
+
+header h1 {
+    margin-bottom: 0px; /* Sumažintas apatinis tarpas po „Kontaktai“ */
+}
+
+/* Mažiname tarpą tarp formos ir pristatymo */
+section#form {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+/* Bendras stilius */
+body {
+    font-family: Arial, sans-serif; /* Srifto nustatymas */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header stiliai */
+header {
+    display: flex;
+    justify-content: flex-start; /* Tekstas išlygiuotas į kairę */
+    align-items: center;         /* Vertikalus išlygiavimas */
+    padding: 10px;
+    background-color: #f9f9f9;   /* Šviesus fonas (pasirinktinai) */
+}
+
+header p {
+    margin: 0; /* Pašaliname nereikalingą tarpą */
+}
+
+/* Navigacija */
+nav a {
+    margin-right: 20px;
+    text-decoration: underline; /* pabraukimą */
+    color: #484bf8;           /* Teksto spalva */
+}
+
+header, nav, footer {
+    margin-bottom: 20px;
+}
+
+/* Main stiliai */
+main {
+    display: flex;
+    flex-direction: column; /* Elementai rikiuojami vertikaliai */
+    justify-content: flex-start; /* Horizontaliai išlygiuota į kairę */
+    align-items: flex-start;     /* Vertikaliai išlygiuota į kairę */
+    padding: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+main p {
+    margin: 0 0 10px 0; /* Pridedame tarpą tarp paragrafų */
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #b9c6f0;
+    outline: none;
+}
+
+/* Sekcijos stiliai */
+section {
+    margin-bottom: 0px;
+}
+
+/* Footer stiliai */
+footer, nav, header p {
+    display: flex;
+    justify-content: center; /* Centruojame tekstą horizontaliai */
+    align-items: center;     /* Centruojame tekstą vertikaliai */
+    height: auto;            /* Footer aukštis */
+    padding: 10px;
+    background-color: #f2f4fc; /* Fono spalva */
+    width: 100%; /* Užtikrina, kad spalva užims visą matomą langą */
+    text-align: center;
+}
+
+footer p {
+    margin: 0; /* Pašaliname numatytus tarpus */
+}
+
+main, h2 {
+    margin-bottom:  150px;
+}
+
+h2, p {
+    margin-bottom: 0px;
+}
+
+/* Mažiname tarpą tarp Kontaktai ir Užsakymai */
+section#uzsakymai h2 {
+    margin-top: 0px; /* Sumažintas viršutinis tarpas */
+    margin-bottom: 20px; /* Sumažintas apatinis tarpas */
+}
+
+/* Mažiname tarpą tarp Kontaktai ir Užsakymai */
+section#pristatymas h2 {
+    margin-top: 10px; /* Sumažintas viršutinis tarpas */
+    margin-bottom: 20px; /* Sumažintas apatinis tarpas */
+}
+
+header h1 {
+    margin-bottom: 0px; /* Sumažintas apatinis tarpas po „Kontaktai“ */
+}
+
+/* Mažiname tarpą tarp formos ir pristatymo */
+section#form {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+/* Sekcija susisiekime */
+.about-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    margin: 20px 0;
+    background-color: rgb(255, 254, 254);
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(250, 248, 248, 0.1);
+    gap: 20px;
+}
+
+.about-box img {
+    max-width: 35%; /* Pakeiskite dydį pagal poreikį */
+    height: auto;
+}
+
+.about-text {
+    max-width: 600px; /* Apriboti teksto plotį */
+}

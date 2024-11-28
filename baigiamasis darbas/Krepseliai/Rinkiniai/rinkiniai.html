@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krepšelių rinkiniai</title>
+    <link rel="stylesheet" href="rinkiniai.css">
+    <script src="rinkiniai.js"></script>
+</head>
+<body>
+    <header>
+        <p>Susisiekime: +370 699 38358 arba <br> <a href="mailto:info@interjeras.lt">info@interjeras.lt</a></p>
+    </header>
+    
+    <header>
+        <h1>Krepšelių rinkiniai</h1>
+        <div class="filters">
+            <div>Filtruoti: <button>Kaina</button></div>
+            <div>Rūšiuoti pagal: <button class="active">Spalva</button></div>
+            <div>7 gaminiai (-ių)</div>
+        </div>
+
+        <div id="filters">
+            <ul>
+                <li><button data-color="iv. spalvu">Įv. spalvų</button></li>
+                <li><button data-color="šv. žalias">Šv. žalias</button></li>
+                <li><button data-color="ruduo">ruduo</button></li>
+                <li><button data-color="baltas">Baltas</button></li>
+                <li><button data-color="dangus">Dangus</button></li>
+                <li><button data-color="all">Visos spalvos</button></li>
+            </ul>
+            </div>
+    </header>
+
+    <main>
+        <div class="product-gallery">
+            <!-- Kiekvienas produktas -->
+            <div class="product" data-color="įv. spalvų">
+                    <div class="product-image">
+                    <img src="krepseliu rinkinys1.jpg" alt="Įvairių spalvų ir dydžių trijų krepšelių rinkinys">
+                    <div class="label">Išparduota</div>
+                </div>
+                <h3>Įvairių spalvų ir dydžių trijų krepšelių rinkinys</h3>
+                <div class="price">
+                    <span class="old-price">75,00 €</span>
+                    <span class="new-price">45,88 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="šv. žalias">
+                <div class="product-image">
+                    <img src="krepseliu rinkinys2.jpg" alt="Šv. žalias krepšelių rinkinys">
+                </div>
+                <h3>Šv. žalias krepšelių rinkinys</h3>
+                <div class="price">
+                    <span class="new-price">25,50 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="šv. žalias">
+                <div class="product-image">
+                    <img src="krepseliu rinkinys3.jpg" alt="Krepšelių rinkinys Ruduo">
+                </div>
+                <h3>Krepšelių rinkinys Ruduo</h3>
+                <div class="price">
+                    <span class="new-price">28,50 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="t. pilkas">
+                <div class="product-image">
+                    <img src="krepseliu rinkinys4.jpg" alt="Baltų krepšelių rinkinys">
+                </div>
+                <h3>Baltų krepšelių rinkinys</h3>
+                <div class="price">
+                    <span class="new-price">35,00 €</span>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="krepseliu rinkinys5.jpg" alt="Krepšelių rinkinys Dangus">
+                    <div class="label">Išparduota</div>
+                </div>
+                <h3>Krepšelių rinkinys Dangus</h3>
+                <div class="price">
+                    <span class="new-price">15,50 €</span>
+                </div>
+            </div>
+
+             <!-- puslapiu navigacija-->
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>    
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">6</a>
+                <a href="#">&gt;</a> <!-- Kitas puslapis -->
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <a href="Pagrindinis/index.html">Grįžti į pagrindinį puslapį</a>
+    </nav>
+
+       <footer>
+        <p>&copy; 2024. Visos teisės saugomos.</p>
+    </footer>
+
+</body>
+</html>

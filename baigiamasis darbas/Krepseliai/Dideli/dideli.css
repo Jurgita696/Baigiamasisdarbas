@@ -1,0 +1,222 @@
+/* Bendras stilius */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    text-align: center;
+    padding: 1px;
+    background-color: #f4f4f4; 
+    margin: 0; 
+}
+
+header {
+    font-size: 15px;
+    color: #555;
+}
+
+header h1 {
+    padding: 20px;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    font-size: 14px;
+}
+
+/* Produktų galerija */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-image .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+h3 {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+}
+
+.price {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.price .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.price .new-price {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Puslapi7 rodymas po galerija */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.pagination a,
+.pagination span {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    color: #000;
+    pointer-events: none;
+}
+
+/*perejimas tarp produktu*/
+
+.product {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Navigacija ir footer apačioje */
+nav, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4; /* Galite keisti spalvą pagal poreikį */
+}
+
+footer {
+    font-size: 15px;
+    color: #555;
+}
+footer p {
+    margin: 0; /* Pašaliname numatytus tarpus */
+}
+
+/*paslepta spalva*/
+
+#color-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#color-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#color-dropdown li {
+    padding: 5px;
+}
+
+#color-dropdown li button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#color-dropdown li button:hover {
+    background-color: #f0f0f0;
+}
+/* Paslėpti spalvų išskleidžiamąjį sąrašą */
+#filters {
+    display: none; /* Pradžioje paslėpta */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#filters ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#filters li {
+    padding: 5px;
+}
+
+#filters li button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#filters li button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Paspaudus mygtuką, rodyti sąrašą */
+.filters button.active + #filters {
+    display: block;
+}

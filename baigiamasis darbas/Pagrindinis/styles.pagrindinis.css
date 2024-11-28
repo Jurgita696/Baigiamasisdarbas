@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden; /* Užkirsti kelią horizontaliam slinkimui */
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Horizontaliai išcentrinta */
+    align-items: center;     /* Vertikaliai išcentrinta */
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    margin: 0; /* Pašaliname numatytus tarpus */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Horizontaliai išcentruota */
+    align-items: center;     /* Vertikaliai išcentruota */
+    height: 60px;            /* Galima pritaikyti pagal poreikį */
+    max-width: 1200px;       /* Apribotas maksimalus plotis */
+    margin-bottom: 0;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    color: #292929; /* Tamsiai pilka spalva */
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #282829; /* Spalva pasikeičia, kai užvedama pelė */
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Horizontaliai išcentrinta */
+    align-items: center;     /* Vertikaliai išcentrinta */
+    height: 60px;            /* Galima pritaikyti pagal poreikį */
+    text-align: center;
+    background-color: #f4f4f4;
+    font-size: 15px;
+    color: #555;
+}
+
+footer p {
+    margin: 0; /* Pašaliname numatytus tarpus */
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Elementai rikiuojami vertikaliai */
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%; /* Užtikrina, kad galerija neužims daugiau vietos nei reikia */
+}
+
+/* Išskleidžiamas meniu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-btn {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: #252525;
+    cursor: pointer;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Aktyvus išskleidimas */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Produktų galerija, siekiant geresnio pritaikymo prie skirtingų ekranų */
+@media (max-width: 768px) {
+    .filters, .pagination {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-gallery {
+        grid-template-columns: 1fr; /* Mobiliesiems prietaisams vienas stulpelis */
+    }
+}
+
+/* Užtikrinimas, kad nesusidarys horizontalaus slinkimo */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

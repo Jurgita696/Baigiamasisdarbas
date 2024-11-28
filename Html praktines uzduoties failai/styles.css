@@ -1,0 +1,330 @@
+:root {
+    --primary: #914128;
+    --primary-light: #eba731;
+    --secondary: #ffba43;
+    --secondary-light: #ffba43;
+    --header-color: #3a2222;
+    --body-text-color: #4e4b66;
+    --body-text-color-white: #bac4ce;
+    --header-font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --body-font-size: 1rem;
+    --section-padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  .site-header {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eff8eb;
+    position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #4e4b66;
+    font-size: 16px;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+  }
+  
+  .contact-button {
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: var(--primary);
+    color: #fff;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--primary);
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .burger .line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  .title {
+    font-size: var(--header-font-size);
+    font-weight: 900;
+    line-height: 1.2em;
+    color: var(--header-color);
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  .description {
+    font-size: var(--body-font-size);
+    line-height: 1.5em;
+    max-width: 40.625rem;
+    margin: 0 0 1rem 0;
+    color: var(--body-text-color);
+  }
+  
+  .button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    padding: 0 clamp(2rem, 4vw, 3rem);
+    background-color: var(--primary);
+    color: var(--body-text-color-white);
+    display: inline-block;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .button-solid:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  #hero {
+    padding: var(--section-padding);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .container {
+    width: ;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .content {
+    text-align: center;
+    width: 100%;
+    margin-bottom: clamp(2.5rem, 5vw, 3.25rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-button {
+    flex: none;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: clamp(17.5rem, 58.6vw, 31.875rem);
+    margin-bottom: clamp(1rem, 2vw, 1.25rem);
+    display: block;
+    position: relative;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2.5rem;
+    position: absolute;
+  }
+  
+  .card-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 2vw, 1.25rem);
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .card-item {
+    text-align: center;
+    list-style: none;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    background-color: #edf7ed;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 12;
+    transition: border-color 0.2s;
+  }
+  
+  .card-item:hover {
+    border-color: var(--primary);
+  }
+  
+  .card-item:hover .card-title {
+    color: var(--primary);
+  }
+  
+  .card-item:hover .icon {
+    transform: rotateY(360deg);
+  }
+  
+  .icon-picture {
+    margin-bottom: 1.25rem;
+    perspective: 700px;
+    transform-style: preserve-3d;
+  }
+  
+  .icon {
+    width: 2.5rem;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0 0 0.75rem 0;
+    color: var(--header-color);
+    transition: color 0.3s;
+  }
+  
+  .card-text {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    color: var(--body-text-color);
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      z-index: 1000;
+      padding: 1rem;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .contact-button {
+      display: none;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .description {
+      font-size: 1.25rem;
+    }
+  
+    .card-item {
+      text-align: left;
+      align-items: flex-start;
+      grid-column: span 6;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .site-header {
+      padding: 20px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .title {
+      max-width: 46.875rem;
+    }
+  
+    .card-item {
+      grid-column: span 3;
+    }
+  }
+  
+  @media (min-width: 1300px) {
+    .site-header {
+      padding: 40px 0;
+    }
+  
+    .title {
+      margin: 0;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .content {
+      text-align: left;
+      max-width: 80rem;
+      gap: 1.25rem;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .text-button {
+      width: 50%;
+      max-width: 39.375rem;
+    }
+  }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dideli krepšeliai</title>
+    <link rel="stylesheet" href="dideli.css">
+    <script src="dideli.js"></script>
+</head>
+<body>
+    <header>
+        <p>Susisiekime: +370 699 38358 arba <br> <a href="mailto:info@interjeras.lt">info@interjeras.lt</a></p>
+    </header>
+    
+    <header>
+        <h1>Dideli krepšeliai</h1>
+        <div class="filters">
+            <div>Filtruoti: <button>Kaina</button></div>
+            <div>Rūšiuoti pagal: <button class="active">Spalva</button></div>
+            <div>7 gaminiai (-ių)</div>
+        </div>
+
+        <div id="filters">
+            <ul>
+                <li><button data-color="pilkas">Pilkas</button></li>
+                <li><button data-color="šv. mėlynas">Šv. mėlynas</button></li>
+                <li><button data-color="t. mėlynas">T. mėlynas</button></li>
+                <li><button data-color="smėlio">Smėlio</button></li>
+                <li><button data-color="all">Visos spalvos</button></li>
+            </ul>
+            </div>
+    </header>
+
+    <main>
+        <div class="product-gallery">
+            <!-- Kiekvienas produktas -->
+            <div class="product" data-color="pilkas">
+                    <div class="product-image">
+                    <img src="dideli1.jpg" alt="Stačiakampis krepšelis pilkas">
+                    <div class="label">Išparduota</div>
+                </div>
+                <h3>Stačiakampis krepšelis pilkas</h3>
+                <div class="price">
+                    <span class="old-price">35,84 €</span>
+                    <span class="new-price">25,88 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="šv. mėlynas">
+                <div class="product-image">
+                    <img src="dideli2.jpg" alt="Apvalus didelis krepšelis šv. mėlynas">
+                </div>
+                <h3>Apvalus didelis krepšelis šv. mėlynas</h3>
+                <div class="price">
+                    <span class="new-price">82,44 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="t. mėlynas">
+                <div class="product-image">
+                    <img src="dideli3.jpg" alt="Apvalus didelis krepšelis t. mėlynas">
+                </div>
+                <h3>Apvalus didelis krepšelis t. mėlynas</h3>
+                <div class="price">
+                    <span class="new-price">82,44 €</span>
+                </div>
+            </div>
+
+            <div class="product" data-color="smėlio">
+                <div class="product-image">
+                    <img src="dideli4.jpg" alt="Apvalus didelis krepšelis smėlio spalvos">
+                </div>
+                <h3>Apvalus didelis krepšelis smėlio spalvos</h3>
+                <div class="price">
+                    <span class="new-price">85 €</span>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="dideli5.jpg" alt="Džiuto apvalus didelis krepšelis">
+                    <div class="label">Išparduota</div>
+                </div>
+                <h3>Džiuto apvalus didelis krepšelis</h3>
+                <div class="price">
+                    <span class="new-price">75,50 €</span>
+                </div>
+            </div>
+
+            <!-- puslapiu navigacija-->
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>    
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">6</a>
+                <a href="#">&gt;</a> <!-- Kitas puslapis -->
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <a href="Pagrindinis/index.html">Grįžti į pagrindinį puslapį</a>
+    </nav>
+
+       <footer>
+        <p>&copy; 2024. Visos teisės saugomos.</p>
+    </footer>
+
+</body>
+</html>

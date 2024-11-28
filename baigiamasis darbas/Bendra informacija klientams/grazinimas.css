@@ -1,0 +1,111 @@
+/* Bendri stiliai */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Stiliai grąžinimo sąlygoms */
+#grazinimas {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#grazinimas h2 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#grazinimas ul {
+    list-style-type: disc;
+    padding: 0;
+    text-align: justify;  /* Lygiuoja tekstą iš abiejų pusių */
+}
+
+#grazinimas li {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Tinkamų nuorodų stiliai */
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formos stiliai */
+#form {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#form input, #form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form button:hover {
+    background-color: #0056b3;
+}
+
+/* Pagrindinio puslapio nuoroda */
+nav a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
